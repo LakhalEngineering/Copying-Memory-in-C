@@ -16,7 +16,9 @@ int main(){
 
     char buffer[BUFFER_SIZE];
 
-    memcpy(buffer+NODE_OFFSET, &n, sizeof(node_t)); // P1 : distination P2 : Adress of source P3 : size
+    memset(buffer, 0xCD, BUFFER_SIZE); // P1 : Pointer memory that you want to set , P2 : Value, P3 : Numbers of bytes
+
+    //memcpy(buffer+NODE_OFFSET, &n, sizeof(node_t)); // P1 : distination P2 : Adress of source P3 : size
     n2 = (node_t*)buffer+NODE_OFFSET; // using pointer
 
     /* n2 = n; */

@@ -17,7 +17,7 @@ int main(){
     char buffer[BUFFER_SIZE];
 
     memcpy(buffer+NODE_OFFSET, &n, sizeof(node_t)); // P1 : distination P2 : Adress of source P3 : size
-    n2 = (node_t*)buffer+NODE_OFFSET;
+    n2 = (node_t*)buffer+NODE_OFFSET; // using pointer
 
     /* n2 = n; */
 
